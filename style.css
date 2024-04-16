@@ -1,0 +1,142 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Apply flex */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  /* background-color: aqua; */
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  
+}
+
+/* Main Container */
+.wrapper {
+  width: 440px;
+  background: rgb(71, 15, 201);
+  background: linear-gradient(
+    0deg,
+    rgb(30, 5, 70) 20%,
+    rgb(22, 7, 105) 74%
+  );
+
+  padding: 2.5rem;
+  flex-direction: column;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 1px 66px -30px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 66px -30px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 66px -30px rgba(0, 0, 0, 0.75);
+}
+
+/* Time text */
+.wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 2.5rem 0;
+  color: #fff;
+}
+
+/* Main content */
+.wrapper .content {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* Disable content menu */
+.wrapper .content.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Hour Minute AM/PM section */
+.content .column {
+  border-radius: 5px;
+  border: 1px solid #999;
+  width: calc(100% / 3 - 5px);
+}
+
+.content .column select {
+  outline: none;
+  border: none;
+  height: 53px;
+  width: 100%;
+  font-size: 1rem;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: rgb(218, 239, 244);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Set Button */
+.wrapper button,
+#resumeBtn {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(47, 143, 199);
+  background-color: rgb(38, 133, 161);
+  padding: 1rem 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Click effect on button */
+.wrapper button:active,
+#resumeBtn:active {
+  background-color: rgb(174, 52, 52);
+  font-size: 1.2rem;
+  /* padding: 0.8rem 0; */
+}
+
+/* Resume button */
+#resumeBtn {
+  background-color: rgb(9, 107, 255);
+  width: 200px;
+}
+
+.welcomeBack {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(86, 145, 224);
+  background: radial-gradient(
+    circle,
+    rgba(86, 145, 224, 1) 17%,
+    rgba(0, 117, 255, 1) 73%
+  );
+  z-index: 10;
+  flex-direction: column;
+  /* display: none; */
+}
+
+.d-none {
+  display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 95vw;
+  }
+
+  .welcomeBack {
+    font-size: 0.5rem;
+  }
+}
