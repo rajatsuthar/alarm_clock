@@ -14,4 +14,5 @@ Contact
 Author: Rajat suthar (rajatsuthar76@gmail.com)
 
 LinkedIn - 
-GitHub -
+GitHub - https://github.com/rajatsuthar
+HostLink - https://rajatsuthar.github.io/alarm_clock/
